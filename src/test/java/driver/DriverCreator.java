@@ -14,7 +14,7 @@ import java.net.URL;
 public class DriverCreator {
     MobileConfig mobileConfig = ConfigFactory.create(MobileConfig.class);
     public void createDriver() {
-
+        //asd
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserstack.user", mobileConfig.getUser());
         capabilities.setCapability("browserstack.key", mobileConfig.getKey());
