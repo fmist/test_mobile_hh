@@ -12,7 +12,7 @@ post {
     always {
         script {
         allure([
-                commandLine : '2.13.0',
+                commandline : '2.13.0',
                 includeProperties: false,
                 jdk : 'openjdk-11',
                 properties : [],
