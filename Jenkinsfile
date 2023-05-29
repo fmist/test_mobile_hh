@@ -17,7 +17,7 @@ post {
                 jdk : 'openjdk-11',
                 properties : [],
                 reportBuildPolicy: 'ALWAYS',
-                results : [[path: 'build/allure-results']
+                results : [[path: 'build/allure-results']]
         ])
         }
     }
