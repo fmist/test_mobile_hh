@@ -4,7 +4,7 @@ agent any
 stages {
     stage('test') {
     steps {
-         echo 'asd'
+         sh './gradlew cucumber'
         }
     }
 }
