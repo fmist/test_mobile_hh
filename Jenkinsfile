@@ -10,7 +10,16 @@ stages {
 }
 post {
     always {
-        allure includeProperties: false, jdk: '', results: [[path: 'build/allure-results']]
+        script {
+        allure([
+                commandLine : '2.13.0',
+                includeProperties: false,
+                jdk : 'openjdk-11',
+                properties : [],
+                reportBuildPolicy: 'ALWAYS',
+                results : [[path: 'build/allure-results']
+        ])
+        }
     }
 }
 }
