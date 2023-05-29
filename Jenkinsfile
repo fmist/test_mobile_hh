@@ -4,7 +4,7 @@ agent any
 stages {
     stage('test') {
     steps {
-         sh './gradlew cucumber'
+         sh './gradlew clean cucumber'
         }
     }
 }
@@ -20,6 +20,7 @@ post {
                 results : [[path: 'build/allure-results']]
         ])
         }
+        cleanWs()
     }
 }
 }
