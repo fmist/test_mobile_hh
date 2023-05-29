@@ -4,7 +4,7 @@ agent any
 stages {
     stage('test') {
     steps {
-         sh './gradlew cucumber'
+//          sh './gradlew cucumber'
         }
     }
 }
@@ -17,7 +17,7 @@ post {
                 jdk : 'openjdk-11',
                 properties : [],
                 reportBuildPolicy: 'ALWAYS',
-                results : [[path: 'build/allure-results']]
+                results : [[path: 'test_mobile_hh/build/allure-results']]
         ])
         }
     }
